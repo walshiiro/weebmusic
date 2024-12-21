@@ -17,6 +17,7 @@ body,html{
 }
 
 
+
   
 .information
 {
@@ -59,7 +60,7 @@ body,html{
 .lists
 {
     display: flex;
-    font-size: 18px;
+    font-size: 13px;
     align-items: center;
     
 }

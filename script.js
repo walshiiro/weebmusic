@@ -56,21 +56,13 @@ function artistbg()
   // Find the artist in the list
   const artist = listartist.find((artist) => artist.name === artistName);
   
-  // Check if artist is found
-  if (!artist) {
-    const artistInfoContainer = document.getElementById('artistinfo');
-    artistInfoContainer.innerHTML = `<p>Artist not found!</p>`;
-    return;
-  }
+
   
   // Prepare artist information container
   const artistInfoContainer = document.getElementById('artistbg');
   artistInfoContainer.classList.add('bg');
-  artistInfoContainer.style.backgroundImage = `url("${artist.img}")`;
-  artistInfoContainer.style.backgroundRepeat = "no-repeat";
-  artistInfoContainer.style.backgroundSize = "cover"; // Scale the image to cover the container
-  artistInfoContainer.style.backgroundPosition = "center";
-  ; // Center the image
+
+   // Center the image
 
 }
  
