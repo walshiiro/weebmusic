@@ -22,19 +22,30 @@
 <body>
        
         <div class="header">
-
+            <div id="artistbg"><script>artistbg()</script></div>
             <div id="artistinfo">
                 <script>artistInfo();</script>
             </div>
             <script src="artist.js"></script>
+        </div>
+        <div class="btn">
 
-
+            <i class="fa-solid fa-play" id="play-icon" onclick="togglePlayPause()"></i>
+            <i class="fa-solid fa-pause" id="pause-icon" onclick="togglePlayPause()" style="display: none;"></i>
+            <i class="fa-solid fa-shuffle"></i>
 
         </div>
+        <div class="lists">
+            <div id="songlists"></div>
+        </div>
+        <script>
+            displayArtistSongs();
+        </script>
+        <script src="song.js"></script>
         
         <script src="script.js"></script>
 
-    </div>
+    
 
 </body>
 
