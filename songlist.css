@@ -15,9 +15,22 @@ body,html{
     
 	
 }
-
-
-
+.bg {
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-image: url("./img/wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    filter: blur(8px);
+    position: absolute;
+    z-index: 10;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
   
 .information
 {
@@ -145,3 +158,17 @@ body,html{
     cursor: pointer; /* Change cursor to pointer when hovering */
 }
 
+.content-padding
+{
+    display: flex;
+    padding: 40px 40px;
+    margin: 40px;
+}
+
+
+  /* Màu khi hàng được chọn */
+  .song-element.active-row td {
+    background-color: #f0a500; /* Màu vàng nhạt */
+    color: white; /* Chữ màu trắng */
+  }
+  
